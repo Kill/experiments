@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>yolo</title>
+        <link rel="stylesheet" href="css/screen.css">
+    </head>
+    <style>
+    .navigation,
+    .user {
+        float: left;
+    }
+
+    .navigation {
+        margin-right: 150px;
+    }
+    </style>
+<body>
+
+
+    <script type="text/template" id="userViewTemplate">
+        <p> <%= name %> </p>
+        <p> <%= age %> </p>
+        <p> <%= index %> </p>
+        <p><img src=<%= picture %> title="" /> </p>
+    </script>
+
+    <script type="text/template" id="usersViewTemplate">
+
+    </script>
+
+    <script type="text/template" id="homeViewTemplate">
+        <li><a href="#user/<%= index %>" title=<%= name %> ><%= name %></a></li>
+    </script>
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/underscore.js"></script>
+    <script src="js/lib/backbone.js"></script>
+    <script src="js/app.js"></script>
+    <div class="user"></div>
+
+</body>
+</html>
